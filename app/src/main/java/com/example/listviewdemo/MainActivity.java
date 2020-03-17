@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, Messages.class);
                 intent.putExtra("ID", CQU_ID[position]);
+                intent.putExtra("image",R.drawable.girl);
                 MainActivity.this.startActivity(intent);
 
 
