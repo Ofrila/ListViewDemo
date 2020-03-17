@@ -56,12 +56,38 @@ public class MainActivity extends AppCompatActivity {
 
     int[] images={
             R.drawable.girl,
-            R.drawable.picture,
             R.drawable.picture2,
             R.drawable.picture3,
             R.drawable.picture4,
             R.drawable.picture5,
-            R.drawable.picture6
+            R.drawable.picture6,
+            R.drawable.picture7,
+            R.drawable.picture8,
+            R.drawable.picture9,
+            R.drawable.picture10,
+            R.drawable.picture11,
+            R.drawable.picture12,
+            R.drawable.picture13,
+            R.drawable.picture14,
+            R.drawable.picture15,
+            R.drawable.picture16,
+            R.drawable.picture17,
+            R.drawable.picture18,
+            R.drawable.picture19,
+            R.drawable.picture20,
+            R.drawable.picture21,
+            R.drawable.picture22,
+            R.drawable.picture23,
+            R.drawable.picture24,
+            R.drawable.picture25,
+            R.drawable.picture26,
+            R.drawable.picture27,
+            R.drawable.picture28,
+            R.drawable.picture29,
+            R.drawable.picture30,
+            R.drawable.picture31,
+            R.drawable.picture32,
+            R.drawable.picture33
     };
 
     @Override
@@ -77,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 View layout=View.inflate(MainActivity.this, R.layout.item, null);
                 ImageView image = (ImageView)layout.findViewById(R.id.item_image);
                 TextView ID =(TextView)layout.findViewById(R.id.item_text);
-                image.setImageResource(images[position % 6]);
+                image.setImageResource(images[position]);
                 ID.setText(CQU_ID[position]);
                 return layout;
             }
@@ -112,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                setContentView(R.layout.activity_messages);
                ImageView imageView=findViewById(R.id.image);
                TextView textView=findViewById(R.id.tv_id);
-               imageView.setImageResource(images[position % 6]);
+               imageView.setImageResource(images[position]);
                textView.setText(CQU_ID[position]);
 
             }
